@@ -192,7 +192,7 @@
         // reset error and set isAuthenticating to true
         error.style.display = 'none'
         isAuthenticating = true
-        authBtn.innerText = 'Authenticating...'
+        authBtn.innerText = 'Authenticating.....'
 
         try {
             let data
@@ -219,7 +219,7 @@
                 localStorage.setItem('token', token)
 
                 // authenicating into loading
-                authBtn.innerText = 'Loading...'
+                authBtn.innerText = 'Loading.....'
 
                 // fetch todos
                 await fetchTodos()
@@ -227,7 +227,7 @@
                 // show dashboard
                 showDashboard()
             } else {
-                throw Error('❌ Failed to authenticate...')
+                throw Error('❌ Failed to authenticate.....')
             }
 
         } catch (err) {
